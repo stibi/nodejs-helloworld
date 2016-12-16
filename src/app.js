@@ -12,6 +12,7 @@ let message = 'Hello world';
 // [05] 17/12/2016 11:20 trigger a build
 // [06] 17/12/2016 11:39 další trigger, lambda trochu zlobí, zdá se
 // [07] 17/12/2016 11:40 super, teď je to lepší. Zkusíme, jestli problém byl opravdu úklid na lambdě
+// [08] 17/12/2016 11:41 jop, přesně tak. Zahřáté lambdě tam zůstane bordel z přebalování zipu, fixed!
 
 app.get('/', function (req, res) {
   res.send(message)
