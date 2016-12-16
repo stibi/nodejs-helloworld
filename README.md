@@ -6,9 +6,14 @@ Shit get serious! Mám totiž TODO list:
 
 - [x] build trigger & fetch pomocí AWS Lambda
 - [x] velmi základní build na AWS CodeBuild
-- [ ] velmi základní build pipeline
+- [x] velmi základní build pipeline
+      - opravdu základní, moc toho neumí
+      - použije build z předchozího kroku
+      - jako vstup a trigger je ZIP s kódem na S3, který tam nalije Lambda při každém Github push eventu
+      - pipeline spustí build, uloží výsledek do svého bucketu
+      - zatím neexistuje deploy step, takže tímto to končí
+- [ ] build & push docker image
 - [ ] slack notifikace
-- [ ] build & push docker image s aplikací
 - [ ] přidání jednoduchých testů
 - [ ] přepsání do TypeScriptu
 - [ ] vlastní build environment
@@ -21,6 +26,7 @@ A budou další, třeba:
 - informace o buildu: kdo ho spustil, jaké commity se buildí, jak dlouho to trvalo
 - podpora buildů z různých branchí
 - sparse checkout & build, to potřebuji obzvlášť
+- publikovat k8s deploy lambdu
 
 ## fetch & build
 
