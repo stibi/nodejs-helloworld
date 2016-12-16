@@ -9,6 +9,7 @@ let message = 'Hello world';
 // [02] 16/12/2016 01:18 tak to by bylo, ted teda samotny build
 // [03] 16/12/2016 01:18 mam gulpfile a takovy pseudo build
 // [04] 17/12/2016 10:25 lambda by ted mela prebalit githubi zip, zrusit root adresar
+// [05] 17/12/2016 11:20 trigger a build
 
 app.get('/', function (req, res) {
   res.send(message)
