@@ -4,7 +4,7 @@ Build & nasazení nodejs aplikace pomocí AWS CodePipeline.
 
 Shit get serious! Mám totiž TODO list:
 
-- [ ] build trigger & fetch pomocí AWS Lambda
+- [x] build trigger & fetch pomocí AWS Lambda
 - [ ] velmi základní build na AWS CodeBuild
 - [ ] velmi základní build pipeline
 - [ ] slack notifikace
