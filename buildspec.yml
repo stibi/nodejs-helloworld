@@ -4,11 +4,8 @@ phases:
   install:
     commands:
       - echo Installing dependencies
+      - npm install -g gulp
       - npm install
-  #pre_build:
-  #  commands:
-  #    - echo Installing dependencies
-  #    - cd backup-server && npm install
   build:
     commands:
       - echo Build started on `date`
