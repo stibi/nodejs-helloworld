@@ -1,6 +1,10 @@
 version: 0.1
 
 phases:
+  pre_build:
+    commands:
+      - echo Logging to dockerhub
+      - docker login -u ${DOCKER_USER} -p ${DOCKER_PASSWORD}
   install:
     commands:
       - echo Installing dependencies
