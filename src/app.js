@@ -13,6 +13,9 @@ let message = 'Hello world';
 // [06] 17/12/2016 11:39 další trigger, lambda trochu zlobí, zdá se
 // [07] 17/12/2016 11:40 super, teď je to lepší. Zkusíme, jestli problém byl opravdu úklid na lambdě
 // [08] 17/12/2016 11:41 jop, přesně tak. Zahřáté lambdě tam zůstane bordel z přebalování zipu, fixed!
+// [09] 17/12/2016 14:17 build buildí, založil jsem pipeline, která spustila build
+// Mám pocit, že nový ZIP v bucketu tu pipeline automaticky nespustí, ale uvidíme.
+// Pokud ne, tak to můžu udělat explicitně z lambdy, API tam bude.
 
 app.get('/', function (req, res) {
   res.send(message)
