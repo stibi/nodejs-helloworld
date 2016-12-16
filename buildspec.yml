@@ -1,10 +1,6 @@
 version: 0.1
 
 phases:
-  pre_build:
-    commands:
-      - echo Logging to dockerhub
-      - docker login -u ${DOCKER_USER} -p ${DOCKER_PASSWORD}
   install:
     commands:
       - echo Installing dependencies
@@ -14,13 +10,9 @@ phases:
     commands:
       - echo Build started on `date`
       - gulp build
-      - echo Building the Docker image...
-      - docker build -t stibi/aws-pipeline-nodejs-hello-world:latest .
   post_build:
     commands:
       - echo Build completed on `date`
-      - echo Pushing the Docker image
-      - docker push stibi/aws-pipeline-nodejs-hello-world:latest
 artifacts:
   files:
     - dist/*
