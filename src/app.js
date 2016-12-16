@@ -11,6 +11,7 @@ let message = 'Hello world';
 // [04] 17/12/2016 10:25 lambda by ted mela prebalit githubi zip, zrusit root adresar
 // [05] 17/12/2016 11:20 trigger a build
 // [06] 17/12/2016 11:39 další trigger, lambda trochu zlobí, zdá se
+// [07] 17/12/2016 11:40 super, teď je to lepší. Zkusíme, jestli problém byl opravdu úklid na lambdě
 
 app.get('/', function (req, res) {
   res.send(message)
