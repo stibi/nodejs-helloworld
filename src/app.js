@@ -22,6 +22,7 @@ let message = 'Hello world';
 // [13] 19/12/2016 23:47 dalsi trigger
 // [14] 19/12/2016 23:59 dalsi trigger, artefakty uz se mi na S3 ukladaji do slozek podle branchi
 // [15] 20/12/2016 00:14 je cas to pomalu vyzkouset na private repository
+// [16] 20/12/2016 00:22 token zatim neseje
 
 app.get('/', function (req, res) {
   res.send(message)
