@@ -18,7 +18,9 @@ let message = 'Hello world';
 // Pokud ne, tak to můžu udělat explicitně z lambdy, API tam bude.
 // [10] 17/12/2016 14:23 Je to dobrý, nový ZIP na S3 spustí pipeline, super!
 // [11] 19/12/2016 23:19 Testing build trigger, implementing multi branch support
-// [11] 19/12/2016 23:47 dalsi trigger
+// [12] 19/12/2016 23:47 dalsi trigger
+// [13] 19/12/2016 23:47 dalsi trigger
+// [14] 19/12/2016 23:59 dalsi trigger, artefakty uz se mi na S3 ukladaji do slozek podle branchi
 
 app.get('/', function (req, res) {
   res.send(message)
