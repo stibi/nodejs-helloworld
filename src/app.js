@@ -17,6 +17,7 @@ let message = 'Hello world';
 // Mám pocit, že nový ZIP v bucketu tu pipeline automaticky nespustí, ale uvidíme.
 // Pokud ne, tak to můžu udělat explicitně z lambdy, API tam bude.
 // [10] 17/12/2016 14:23 Je to dobrý, nový ZIP na S3 spustí pipeline, super!
+// [11] 19/12/2016 23:19 Testing build trigger, implementing multi branch support
 
 app.get('/', function (req, res) {
   res.send(message)
