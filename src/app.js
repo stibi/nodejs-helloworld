@@ -16,9 +16,14 @@ let message = 'Hello world';
 // [09] 17/12/2016 14:17 build buildí, založil jsem pipeline, která spustila build
 // Mám pocit, že nový ZIP v bucketu tu pipeline automaticky nespustí, ale uvidíme.
 // Pokud ne, tak to můžu udělat explicitně z lambdy, API tam bude.
+// [10] 17/12/2016 14:23 Je to dobrý, nový ZIP na S3 spustí pipeline, super!
 
 app.get('/', function (req, res) {
   res.send(message)
+})
+
+app.get('/version', function (req, res) {
+  res.send('1')
 })
 
 app.listen(3000, function () {
